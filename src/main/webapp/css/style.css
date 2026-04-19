@@ -1,0 +1,27 @@
+/* Custom smooth styling over Bootstrap defaults */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+input:focus, select:focus {
+    box-shadow: none !important;
+    border-color: #0d6efd !important;
+}
